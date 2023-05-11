@@ -29,7 +29,10 @@
 
 function yelling(words: string[]): string[] {
   // Replace the code below with your own code
-  return []
+  const capitalized = words.map(function(word) {
+    return word.toUpperCase()
+  })
+  return capitalized
 }
 
 /**
@@ -44,7 +47,10 @@ function yelling(words: string[]): string[] {
 
 function doubleTrouble(numbers: number[]): number[] {
   // Replace the code below with your own code
-  return []
+  const doubleTrouble = numbers.map(function(someNumber) {
+    return someNumber * 2
+  })
+  return doubleTrouble
 }
 
 /*
@@ -109,7 +115,10 @@ type Movie = {
   year: number
   score: number
 }
-function bestMoviesOfTheYear(movieObjectArray: Movie[], year: number): string[] {
+function bestMoviesOfTheYear(
+  movieObjectArray: Movie[],
+  year: number
+): string[] {
   // Replace the code below with your own code
   return []
 }
