@@ -82,7 +82,7 @@ function stringyIndexes(strings: string[]): string[] {
 
 function onlyTheEvenSurvive(numbers: number[]): number[] {
   // Replace the code below with your own code
-
+  //My first attempt:
   // const evenNumbers = []
   //numbers.map(num => {
   //   if (num % 2 == 0) return num
@@ -103,7 +103,14 @@ function onlyTheEvenSurvive(numbers: number[]): number[] {
 
 function onlyTheEvenIndexedSurvive(numbers: number[]): number[] {
   // Replace the code below with your own code
-  return []
+  //Personal Notes:
+  //We want a new array to contain only #'s in the [EvenIndex]
+  //position from 'numbers'[].
+
+  let filtered = numbers.filter(function(element, index, array) {
+    return index % 2 === 0
+  })
+  return filtered
 }
 
 /*
