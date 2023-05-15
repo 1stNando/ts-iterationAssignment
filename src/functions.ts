@@ -17,6 +17,8 @@
    the next function is working.
 
 */
+//ERRRRROR import thing!! Was automatically added errror.
+// import { convertTypeAcquisitionFromJson } from 'typescript'
 
 /**
  * 1) Define a function named `yelling` that takes an array of
@@ -80,7 +82,15 @@ function stringyIndexes(strings: string[]): string[] {
 
 function onlyTheEvenSurvive(numbers: number[]): number[] {
   // Replace the code below with your own code
-  return []
+
+  // const evenNumbers = []
+  //numbers.map(num => {
+  //   if (num % 2 == 0) return num
+  // })
+  // console.log(evenNumbers)
+
+  const evens = numbers.filter(num => num % 2 === 0)
+  return evens
 }
 
 /*
