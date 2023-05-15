@@ -47,10 +47,10 @@ function yelling(words: string[]): string[] {
 
 function doubleTrouble(numbers: number[]): number[] {
   // Replace the code below with your own code
-  const doubleTrouble = numbers.map(function(someNumber) {
+  const numbersTimesTwo = numbers.map(function(someNumber) {
     return someNumber * 2
   })
-  return doubleTrouble
+  return numbersTimesTwo
 }
 
 /*
@@ -64,7 +64,10 @@ function doubleTrouble(numbers: number[]): number[] {
 
 function stringyIndexes(strings: string[]): string[] {
   // Replace the code below with your own code
-  return []
+  // function logString(strings: string, index: number) {
+  return strings.map((string, index) => {
+    return `${string} is at index ${index}`
+  })
 }
 
 /*
