@@ -140,7 +140,17 @@ function bestMoviesOfTheYear(
   year: number
 ): string[] {
   // Replace the code below with your own code
-  return []
+  //Heres my first attempt: but its wrong
+  // let sortedMovies = movieObjectArray.filter(movie => movie.score > 90)
+  // console.log(`The movie ${sortedMovies} has score > 90!`)
+  // return sortedMovies
+  return movieObjectArray
+    .filter(
+      movieObjectArray =>
+        movieObjectArray.year === year && movieObjectArray.score > 90
+    )
+    .map(movieObjectArray => movieObjectArray.name)
+  //thank you ChatGPT!!!!!
 }
 
 /*
