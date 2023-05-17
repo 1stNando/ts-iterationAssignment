@@ -154,7 +154,7 @@ function bestMoviesOfTheYear(
 
 function everyoneIsOdd(numbers: number[]): boolean {
   // Replace the code below with your own code
-  return false
+  return numbers.map(num => num % 2 !== 0).every(isOdd => isOdd)
 }
 
 /*
