@@ -181,6 +181,7 @@ function findTheNeedle(strings: string[]): string {
   //strings.filter(strings === `needle`) NOPE...
   const foundString = strings.find(str => str.includes('needle'))
   return foundString || ''
+  //Note how we had to return an empty string array to use this method correctly
 }
 
 /*
@@ -193,8 +194,12 @@ function findTheNeedle(strings: string[]): string {
  */
 
 function findTheNeedleIndex(strings: string[]): number {
-  // Replace the code below with your own code
-  return 42
+  for (let i = 0; i < strings.length; i++) {
+    if (strings[i].includes('needle')) {
+      return i
+    }
+  }
+  return -1
 }
 
 /*
