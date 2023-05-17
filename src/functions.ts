@@ -194,12 +194,16 @@ function findTheNeedle(strings: string[]): string {
  */
 
 function findTheNeedleIndex(strings: string[]): number {
-  for (let i = 0; i < strings.length; i++) {
-    if (strings[i].includes('needle')) {
-      return i
-    }
-  }
-  return -1
+  //First example uses the for loop...not supposed to.
+
+  // for (let i = 0; i < strings.length; i++) {
+  //   if (strings[i].includes('needle')) {
+  //     return i
+  //   }
+  // }
+  // return -1
+  const index = strings.findIndex(str => str.includes('needle'))
+  return index
 }
 
 /*
