@@ -178,7 +178,9 @@ function everyoneIsOdd(numbers: number[]): boolean {
 
 function findTheNeedle(strings: string[]): string {
   // Replace the code below with your own code
-  return ''
+  //strings.filter(strings === `needle`) NOPE...
+  const foundString = strings.find(str => str.includes('needle'))
+  return foundString || ''
 }
 
 /*
